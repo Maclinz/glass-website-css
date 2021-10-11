@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    background-image: url(./img/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+p{
+    font-weight: 700;
+    line-height: 2rem;
+}
+a{
+    cursor: pointer;
+}
+.btn{
+    font-weight: 700;
+    color:rgba(239, 93, 168, 1);
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1734px;
+    height: 915px;
+    background-color: red;
+    border-radius: 20px ;
+    border: 6px solid white;
+    box-shadow: 0px 3px 74px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(13px);
+    background: linear-gradient(285.5deg, rgba(241, 241, 241, 0.54) -8.83%, rgba(255, 255, 255, 0.52) 100.82%);
+}
+
+.main-content{
+    padding: 2rem;
+    height: 100%;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-item {
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    margin: 0 2rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+.body-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    position: relative;
+
+}
+
+.right-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: rgb(238, 136, 161) ;
+    z-index: -1;
+    top: 107px;
+}
+
+.active a{
+    color: #EF5DA8;
+    
+}
+
+.dots{
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    background-color: white;
+    border:1px solid #EF5DA8;
+}
+.dot1{
+    background-color: #EF5DA8;
+}
+
+.mouse{
+    position: absolute;
+    width :35px;
+    height: 54px;
+    background-color: transparent;
+    border: 4px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7%;
+    border-radius: 50px;
+}
+
+.logo, .burger-menu{
+    cursor: pointer;
+}
+
+.mouse::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 76%;
+    width: .4rem;
+    height: .4rem;
+    background-color: white;
+    border-radius: 50%;
+}
